@@ -20,6 +20,9 @@ header h1{
     margin-bottom: auto;
     font-family: 'Antonio', sans-serif;
 }
+h2{
+    font-size:2rem;
+}
 .logo{
     display: flex;
     min-width:39rem ;
@@ -35,11 +38,14 @@ body {
 header nav{
     margin-top: auto;
     margin-bottom: auto;
-    font-family: 'Antonio', sans-serif;
-    
+    font-family: 'Antonio', sans-serif;     
     display: flex;
     justify-content: space-evenly;
-    
+    font-size: 1.5rem;    
+}
+header nav a{
+    color: inherit; 
+    text-decoration: inherit;
 }
 #mission{
     height: 400px;
@@ -73,6 +79,7 @@ header nav{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    padding: 2rem 0;
 }
 .product{
     width: 15rem;
@@ -81,19 +88,53 @@ header nav{
 }
 .product img{
     height: 8.5rem;
-
+    object-fit: cover;
+    width: 100%;
+    height: 153px;  
+    margin-bottom: 0.25rem;  
 }
+.product a{
+    color: inherit; 
+    text-decoration: inherit; 
+}
+
 #employees{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    background-image: url("./images/offices.jpg");
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position: center center;
 }
 .employee{
     width: 10rem;
     height: 15rem;
     overflow: hidden;
+    padding: 0 0.5rem;
+    text-align: center;
+    background-color:rgb(1, 5, 24);
+    align-items: center;
+    color:cornsilk;
 }
 .employee img{
-    height: 8.5rem;
-    display: block;
+    width: 100%;
+    margin-bottom: 0.25rem; 
+    object-fit: cover;
+    height:12rem;
+    
+}
+#employees h2{
+    width: 100%;
+    text-align: center;
+    margin:2rem 0;
+    color:cornsilk;
+}
+
+@media screen and(max-width:700px)
+{
+    html{
+        font-size: 13px;
+    }
+    
 }
